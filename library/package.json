@@ -1,0 +1,43 @@
+{
+  "name": "AssetsWithLaravelMix",
+  "version": "1.0.0",
+  "description": "Custom structure to manage your assets. Work on laravel Mix.",
+  "keywords": [
+    "Webpack",
+    "Laravel mix"
+  ],
+  "author": "Adrian Cano <adriancj1994@hotmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.18",
+    "bootstrap": "^4.0.0",
+    "cross-env": "^5.1",
+    "jquery": "^3.2",
+    "laravel-mix": "^4.0.12",
+    "lodash": "^4.17.5",
+    "popper.js": "^1.12",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.5",
+    "modernizr": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "prefixfree": "^1.0.0",
+    "swiper": "^4.4.2",
+    "vanilla-lazyload": "^8.17.0"
+  }
+}
